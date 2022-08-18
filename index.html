@@ -157,6 +157,24 @@
     <div id="contact">
       <div class="container">
         <h2>Contact Us</h2>
+        <div class="contact-form mb-5">
+          <form name="contact" method="POST" data-netlify="true">
+            <div class="mb-3">
+              <label for="input-email" class="form-label">Email address (required)</label>
+              <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" name="email" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="input-phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="exampleInputPassword1" name="phone">
+            </div>
+            <div class="form-floating mt-3">
+              <label for="floatingTextarea2">Message</label>
+              <textarea class="form-control" placeholder="Ask a question or leave a message here" id="floatingTextarea2" style="height: 200px" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
         <div class="container contactMethods">
           <div class="row">
             <div class="col-md-4">
@@ -199,10 +217,6 @@
           <small>&copy; 2020-2022 CSR Court Reporting, LLC | All Rights Reserved.</small>
         </div>
       </footer>
-    
-
-     
-   
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
