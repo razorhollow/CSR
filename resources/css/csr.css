@@ -7,6 +7,10 @@ body {
 
 }
 
+h1 {
+  text-shadow: 2px 0 black;
+}
+
 h1,h2, h5 {
 	font-weight: 700;
 }
@@ -20,6 +24,7 @@ footer {
 }
 
 .jumbotron {
+  min-height: 50vh;
 	opacity: 80%;
 	color: white;
 	background: url(../images/library.jpg);
@@ -28,7 +33,9 @@ footer {
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				 0px 8px 13px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
-
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
 
 #inputZip {
@@ -49,21 +56,29 @@ footer {
 	background-color: #000033!important;
 }
 
+
 #services {
 	text-align: center;
 	margin: 4rem auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#collapseExample .card {
-	text-align: center;
-	font-weight: bold;
-	background-color: #000033;
-	color: #ff9933;
-	/*display: inline;*/
+#services > h2 {
+  width: 100%;
+  margin-bottom: 4rem;
 }
 
-.card {
-	border: none;
+.service-card {
+  min-width: 400px;
+}
+
+
+.card-icon {
+	max-width: 200px;
 }
 
 .card p {
@@ -94,9 +109,7 @@ footer {
 	padding: 40px 0;
 }
 
-#contact h5 {
-	
-}
+
 
 #contact p {
 	font-size: .7em;

@@ -14,12 +14,3 @@ zip.addEventListener("change", function() {
 		searchResult.textContent = notCovered;
 	}
 });
-// function findZip() { 
-// 	let zip = prompt("What is the Zip Code of Your Venue");
-// 	let a = zipArray.indexOf(zip);
-// 	if (a !== -1) {
-// 		document.getElementById("demo").innerHTML = "Great News, We've got you covered!";
-// 	} else {
-// 		document.getElementById("demo").innerHTML = "Looks like you're outside of our normal area. Email us for a custom quote";
-// 	}
-// }
